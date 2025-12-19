@@ -1,0 +1,77 @@
+32-BIT ALU SIMULATOR USING PYTHON
+ABSTRACT
+
+This project presents the design and implementation of a 32-bit Arithmetic Logic Unit (ALU) simulator using Python. The simulator performs arithmetic, logical, and shift operations based on user-selected opcodes. It also generates processor-style status flags such as Zero, Sign, Carry, and Overflow. A menu-driven interface enables interactive execution, making the system suitable for educational purposes and CPU architecture demonstrations.
+
+OBJECTIVES
+
+To simulate the working of a 32-bit ALU
+
+To implement arithmetic, logical, and shift operations
+
+To understand two’s complement arithmetic
+
+To generate processor condition flags
+
+To design a menu-driven ALU simulator
+
+SYSTEM OVERVIEW
+
+An Arithmetic Logic Unit (ALU) is a core component of a CPU that performs arithmetic and logical operations. In this project, the ALU is simulated in software using Python, while preserving hardware-like behavior through bit masking and flag generation.
+
+OPERATIONS IMPLEMENTED
+
+ADD (Addition)
+
+SUB (Subtraction)
+
+AND (Logical AND)
+
+OR (Logical OR)
+
+XOR (Logical XOR)
+
+SHL (Shift Left)
+
+SHR (Shift Right)
+
+All operations are restricted to 32-bit signed integers.
+
+STATUS FLAGS
+Flag	Description
+Z	Zero flag – result equals zero
+S	Sign flag – MSB is 1
+C	Carry flag – carry out occurred
+V	Overflow flag – signed overflow
+WORKING PRINCIPLE
+
+User selects an operation via numeric menu
+
+Operands A and B are entered
+
+Operation is executed based on opcode
+
+Result is masked to 32 bits
+
+Flags are generated
+
+Output is displayed
+TESTING & RESULTS
+
+Example: Input: ADD, A=10, B=5 Output: Result=15, Flags Z=0, S=0, C=0, V=0
+
+Overflow Case: Input: ADD, A=2147483647, B=1 Output: Result=-2147483648
+
+CONCLUSION
+
+The 32-bit ALU simulator successfully emulates CPU-level arithmetic and logical operations using Python. The project enhanced understanding of low-level computation, bit manipulation, and processor flag logic. The simulator is suitable for academic demonstrations and further extensions.
+
+FUTURE SCOPE
+
+Multiplication and division operations
+
+GUI-based interface
+
+Pipelined ALU simulation
+
+Floating-point arithmetic
