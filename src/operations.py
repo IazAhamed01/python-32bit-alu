@@ -27,3 +27,15 @@ def or_32(a, b):
 
 def xor_32(a, b):
     return mask_32(a ^ b)
+
+# Day 4: Shift operations
+
+def shl_32(a, shift):
+    result = (a << shift) & 0xFFFFFFFF
+    carry = (a >> (32 - shift)) & 1 if shift > 0 else 0
+    return result, carry
+
+def shr_32(a, shift):
+    result = (a >> shift) & 0xFFFFFFFF
+    carry = (a >> (shift - 1)) & 1 if shift > 0 else 0
+    return result, carry
